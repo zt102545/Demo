@@ -1,0 +1,9 @@
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.deps.json
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.runtimeconfig.json
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.runtimeconfig.dev.json
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.dll
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.AssemblyInfoInputs.cache
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.AssemblyInfo.cs
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.pdb
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.dll
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.pdb

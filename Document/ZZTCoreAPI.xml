@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZZTCoreAPI</name>
+    </assembly>
+    <members>
+        <member name="T:ZZTCoreAPI.Common.TokenModelJWT">
+            <summary>
+            令牌
+            </summary>
+        </member>
+        <member name="P:ZZTCoreAPI.Common.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:ZZTCoreAPI.Common.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:ZZTCoreAPI.Common.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+        <member name="M:ZZTCoreAPI.Controllers.ValuesController.Get">
+            <summary>
+            获取数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ZZTCoreAPI.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            GET api/values/5
+            </summary>
+            <param name="id">输入ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:ZZTCoreAPI.Controllers.ValuesController.Post(ZZTCoreModel.Test)">
+            <summary>
+            Post方式提交数据
+            </summary>
+            <param name="test"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

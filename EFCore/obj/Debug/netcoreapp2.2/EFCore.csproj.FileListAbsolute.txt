@@ -1,0 +1,16 @@
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\appsettings.Development.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\appsettings.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\EFCore.deps.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\EFCore.runtimeconfig.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\EFCore.runtimeconfig.dev.json
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\EFCore.dll
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.AssemblyInfoInputs.cache
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.AssemblyInfo.cs
+F:\DEMO\ZZT\ZZTCore\EFCore\bin\Debug\netcoreapp2.2\EFCore.pdb
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.RazorAssemblyInfo.cache
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.RazorAssemblyInfo.cs
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.RazorTargetAssemblyInfo.cache
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.dll
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.pdb
+F:\DEMO\ZZT\ZZTCore\EFCore\obj\Debug\netcoreapp2.2\EFCore.csprojAssemblyReference.cache

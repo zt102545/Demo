@@ -1,0 +1,10 @@
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.exe
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.deps.json
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.runtimeconfig.json
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.runtimeconfig.dev.json
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.dll
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\bin\Debug\netcoreapp3.0\ConsoleTest.pdb
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.AssemblyInfoInputs.cache
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.AssemblyInfo.cs
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.dll
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.pdb

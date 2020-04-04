@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "KafkaClient/1.0.0": {
+        "dependencies": {
+          "kafka-net-core": "1.1.0"
+        },
+        "runtime": {
+          "KafkaClient.dll": {}
+        }
+      },
+      "kafka-net-core/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/kafka-net-core.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KafkaClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "kafka-net-core/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JhP80tieZaYfa6BvD+veKoM5phEY9JLYA80sHVlOawgJ7CXYBpYVj7Ez2gj8aOMLpmAP3vouSYn4hXzIKVVo8g==",
+      "path": "kafka-net-core/1.1.0",
+      "hashPath": "kafka-net-core.1.1.0.nupkg.sha512"
+    }
+  }
+}

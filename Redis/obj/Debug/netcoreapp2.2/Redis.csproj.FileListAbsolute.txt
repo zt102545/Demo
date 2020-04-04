@@ -1,0 +1,13 @@
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Redis.deps.json
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Redis.runtimeconfig.json
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Redis.runtimeconfig.dev.json
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Redis.dll
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.csprojAssemblyReference.cache
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.AssemblyInfoInputs.cache
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.AssemblyInfo.cs
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Redis.pdb
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Newtonsoft.Json.dll
+F:\DEMO\ZZT\ZZTCore\Redis\bin\Debug\netcoreapp2.2\Newtonsoft.Json.xml
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.csproj.CopyComplete
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.dll
+F:\DEMO\ZZT\ZZTCore\Redis\obj\Debug\netcoreapp2.2\Redis.pdb
