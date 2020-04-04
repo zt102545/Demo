@@ -7,3 +7,4 @@ F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.Assemb
 F:\DEMO\ZZT\ZZTCore\RabbitMQClient\bin\Debug\netcoreapp2.1\RabbitMQClient.pdb
 F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.dll
 F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.pdb
+F:\DEMO\ZZT\ZZTCore\RabbitMQClient\obj\Debug\netcoreapp2.1\RabbitMQClient.csprojAssemblyReference.cache

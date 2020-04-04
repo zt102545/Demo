@@ -7,4 +7,3 @@ F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.AssemblyInfoInpu
 F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.AssemblyInfo.cs
 F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.dll
 F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.pdb
-F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.csprojAssemblyReference.cache

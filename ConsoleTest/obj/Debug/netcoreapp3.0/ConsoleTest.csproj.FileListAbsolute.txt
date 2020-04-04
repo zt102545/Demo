@@ -8,3 +8,4 @@ F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.AssemblyInfo
 F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.AssemblyInfo.cs
 F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.dll
 F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.pdb
+F:\DEMO\ZZT\ZZTCore\ConsoleTest\obj\Debug\netcoreapp3.0\ConsoleTest.csprojAssemblyReference.cache

@@ -1,5 +1,4 @@
 F:\DEMO\ZZT\ZZTCore\KafkaClient\bin\Debug\netcoreapp3.0\KafkaClient.exe
-F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.csprojAssemblyReference.cache
 F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.AssemblyInfoInputs.cache
 F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.AssemblyInfo.cs
 F:\DEMO\ZZT\ZZTCore\KafkaClient\bin\Debug\netcoreapp3.0\KafkaClient.deps.json
@@ -11,3 +10,4 @@ F:\DEMO\ZZT\ZZTCore\KafkaClient\bin\Debug\netcoreapp3.0\kafka-net-core.dll
 F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.csproj.CopyComplete
 F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.dll
 F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.pdb
+F:\DEMO\ZZT\ZZTCore\KafkaClient\obj\Debug\netcoreapp3.0\KafkaClient.csprojAssemblyReference.cache

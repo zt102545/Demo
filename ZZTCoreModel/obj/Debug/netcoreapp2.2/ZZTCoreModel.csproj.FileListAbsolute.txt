@@ -1,8 +1,0 @@
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\bin\Debug\netcoreapp2.2\ZZTCoreModel.deps.json
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\bin\Debug\netcoreapp2.2\ZZTCoreModel.dll
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\bin\Debug\netcoreapp2.2\ZZTCoreModel.pdb
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\obj\Debug\netcoreapp2.2\ZZTCoreModel.AssemblyInfoInputs.cache
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\obj\Debug\netcoreapp2.2\ZZTCoreModel.AssemblyInfo.cs
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\obj\Debug\netcoreapp2.2\ZZTCoreModel.dll
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\obj\Debug\netcoreapp2.2\ZZTCoreModel.pdb
-F:\DEMO\ZZT\ZZTCore\ZZTCoreModel\bin\Debug\netcoreapp2.2\ZZTCoreModel.xml
