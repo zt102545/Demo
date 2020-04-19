@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "L1S+cA0Lqm+uBdJU9iLF+x46xp/MJLikhecUdcoVQndRccZ/mwb7iptxh5UyFeQnkdKnR/DLjsaN48hd4m5ifw==",
+  "success": true,
+  "projectFilePath": "F:\\DEMO\\ZZT\\ZZTGit\\Demo\\ConsoleTest\\ConsoleTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
