@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaClient", "KafkaClient\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{6E332341-CD0A-4F28-BADB-0C73CD48A69F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{EFCFC302-7C6B-43C6-9ECB-D010D713DA41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{EFCFC302-7C6B-43C6-9ECB-D010D713DA41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{E3FF5297-2B0A-449D-9496-1B50DB8D9105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{EFCFC302-7C6B-43C6-9ECB-D010D713DA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFCFC302-7C6B-43C6-9ECB-D010D713DA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFCFC302-7C6B-43C6-9ECB-D010D713DA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FF5297-2B0A-449D-9496-1B50DB8D9105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FF5297-2B0A-449D-9496-1B50DB8D9105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FF5297-2B0A-449D-9496-1B50DB8D9105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FF5297-2B0A-449D-9496-1B50DB8D9105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
