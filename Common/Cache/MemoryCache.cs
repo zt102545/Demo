@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Caching.Memory;
 
 
-namespace Common.Cache
+namespace Common
 {
     public class MemoryCache
     {

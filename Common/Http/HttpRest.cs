@@ -3,7 +3,7 @@ using System.Net;
 using System.Text;
 using RestSharp;
 
-namespace Common.Http
+namespace Common
 {
     /// <summary>
     /// 基于RestSharp组件的HTTP

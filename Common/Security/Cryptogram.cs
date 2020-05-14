@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Common.Security
+namespace Common
 {
     /// <summary>
     /// 加密类
