@@ -1,9 +1,0 @@
-F:\DEMO\ZZT\ZZTCore\NetworkIP\bin\Debug\netcoreapp2.1\NetworkIP.deps.json
-F:\DEMO\ZZT\ZZTCore\NetworkIP\bin\Debug\netcoreapp2.1\NetworkIP.runtimeconfig.json
-F:\DEMO\ZZT\ZZTCore\NetworkIP\bin\Debug\netcoreapp2.1\NetworkIP.runtimeconfig.dev.json
-F:\DEMO\ZZT\ZZTCore\NetworkIP\bin\Debug\netcoreapp2.1\NetworkIP.dll
-F:\DEMO\ZZT\ZZTCore\NetworkIP\bin\Debug\netcoreapp2.1\NetworkIP.pdb
-F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.AssemblyInfoInputs.cache
-F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.AssemblyInfo.cs
-F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.dll
-F:\DEMO\ZZT\ZZTCore\NetworkIP\obj\Debug\netcoreapp2.1\NetworkIP.pdb

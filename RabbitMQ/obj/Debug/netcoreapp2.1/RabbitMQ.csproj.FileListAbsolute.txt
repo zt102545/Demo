@@ -1,9 +1,0 @@
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\bin\Debug\netcoreapp2.1\RabbitMQ.deps.json
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\bin\Debug\netcoreapp2.1\RabbitMQ.runtimeconfig.json
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\bin\Debug\netcoreapp2.1\RabbitMQ.runtimeconfig.dev.json
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\bin\Debug\netcoreapp2.1\RabbitMQ.dll
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\obj\Debug\netcoreapp2.1\RabbitMQ.AssemblyInfoInputs.cache
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\obj\Debug\netcoreapp2.1\RabbitMQ.AssemblyInfo.cs
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\bin\Debug\netcoreapp2.1\RabbitMQ.pdb
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\obj\Debug\netcoreapp2.1\RabbitMQ.dll
-F:\DEMO\ZZT\ZZTCore\RabbitMQ\obj\Debug\netcoreapp2.1\RabbitMQ.pdb
