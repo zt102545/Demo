@@ -2,6 +2,24 @@
 
 # Common
 工具类
+## AppSetting
+appsetting.json 配置类
+## Cache
+MemoryCache 缓存类
+## Extensions
+扩展类
+## Http
+Http请求帮助类
+## Json
+Json序列化/反序列化帮助类
+## Log
+日志
+## Random
+随机数
+## Security
+加密类
+## WebSocket
+WebSocket封装
 
 # ConsoleTest
 测试的控制台，一些面试题或测试
@@ -31,6 +49,13 @@ Redis Demo
 基于StackExchange.Redis
 
 # WebAPI NETCORE3.1
+
 ## ExcelController
 Excel导入导出demo
 基于EPPlus
+
+## WebSocketController
+WebSocket服务端demo
+
+# WebSocketServer
+WebSocket控制台服务端demo

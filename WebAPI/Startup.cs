@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Common.WebSocket.Extension;
+using WebAPI.Common;
 
 namespace WebAPI
 {
@@ -66,7 +62,6 @@ namespace WebAPI
                 endpoints.MapControllers();
             });
 
-
             #region Swagger；NetCore3.0以上版本写法一样
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -75,6 +70,16 @@ namespace WebAPI
                 c.RoutePrefix = "";//路径配置，设置为空，表示直接访问该文件。
             });
             #endregion
+
+            #region 使用websocket(扩展方法)
+            //app.AddWebSocketService<WSTestWSBehavior>("/test");//单个链接
+
+            //多个链接，服务端发送：WebAPIWebSocketService.CurrentServiceHost("/test").Sessions.SendTo(dataStr, key);
+            var test = Configuration.GetSection("WebSocketHosts:Server:TestUrl").Value;
+            WebAPIWebSocketService.AddWebSocketService<WSTestWSBehavior>(test);
+            app.AddWebSocketMap();
+            #endregion
+
         }
     }
 }
