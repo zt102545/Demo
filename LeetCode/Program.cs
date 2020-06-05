@@ -32,7 +32,7 @@ namespace LeetCode
                     result = FindMedianSortedArrays(nums1, nums2).ToString();
                     break;
                 case 2://最长回文子串
-                    string s = "babad";
+                    string s = "ccc";
                     result=LongestPalindrome(s);
                     break;
             }
@@ -95,12 +95,12 @@ namespace LeetCode
                 Console.WriteLine($"{i}:");
                 int l = 0;
                 int r = 0;
-                if (i - 1 > 0 && i + 1 < n && s[i - 1] == s[i + 1])
+                if (i - 1 >= 0 && i + 1 < n && s[i - 1] == s[i + 1])
                 {
                     l = i - 1;
                     r = i + 1;
                 }
-                else if(i - 1 > 0 && s[i] == s[i - 1])
+                else if(i - 1 >= 0 && s[i] == s[i - 1])
                 {
                     l = i - 1;
                     r = i;
@@ -111,21 +111,17 @@ namespace LeetCode
                     r = i + 1;
                 }
 
-                while (l > 0 && r < n)
+                while (l >= 0 && r < n)
                 {
+                    if (s[l] != s[r])
+                        break;
                     l--;
                     r++;
-                    if (s[l] != s[r])
-                    {
-                        l++;
-                        r--;
-                        break;
-                    }
                 }
-                int len = r - l + 1;
-                if (r - l + 1 > result.Length)
+                int len = r - l - 1;
+                if (len > result.Length)
                 {
-                    result = s.Substring(l, len);
+                    result = s.Substring(l + 1, len);
                     Console.WriteLine(result);
                 }
             }
