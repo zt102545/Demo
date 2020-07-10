@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
+using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace LeetCode
 {
@@ -7,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Select(2);
+            Select(4);
             Console.ReadKey();
         }
 
@@ -32,8 +36,19 @@ namespace LeetCode
                     result = FindMedianSortedArrays(nums1, nums2).ToString();
                     break;
                 case 2://最长回文子串
-                    string s = "ccc";
-                    result=LongestPalindrome(s);
+                    //给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。例如"cabccbad"的最长回文子串是"abccba"
+                    string s = "cccc";
+                    result = LongestPalindrome(s);
+                    break;
+                case 3://最长公共前缀
+                    //编写一个函数来查找字符串数组中的最长公共前缀。如果不存在公共前缀，返回空字符串 ""。例如输入：["flower","flow","flight"]，输出: "fl"
+                    string[] strs = { "","b" };
+                    result = LongestCommonPrefix(strs);
+                    break;
+                case 4://三数之和
+                    int[] numss = { 0, 0, 0 };
+                    var r = ThreeSum(numss);
+                    result = JsonConvert.SerializeObject(r);
                     break;
             }
             Console.WriteLine(result);
@@ -89,40 +104,115 @@ namespace LeetCode
         {
             string result = "";
             int n = s.Length;
-            //遍历所有的长度
-            for (int i = 0; i < n; i++)
+            int end = 2 * n - 1;
+            for (int i = 0; i < end; i++)
             {
-                Console.WriteLine($"{i}:");
-                int l = 0;
-                int r = 0;
-                if (i - 1 >= 0 && i + 1 < n && s[i - 1] == s[i + 1])
+                double mid = i / 2.0;
+                int p = (int)(Math.Floor(mid));
+                int q = (int)(Math.Ceiling(mid));
+                while (p >= 0 && q < n)
                 {
-                    l = i - 1;
-                    r = i + 1;
+                    if (s[p] != s[q]) break;
+                    p--; q++;
                 }
-                else if(i - 1 >= 0 && s[i] == s[i - 1])
-                {
-                    l = i - 1;
-                    r = i;
-                }
-                else if (i + 1 < n && s[i] == s[i + 1])
-                {
-                    l = i;
-                    r = i + 1;
-                }
-
-                while (l >= 0 && r < n)
-                {
-                    if (s[l] != s[r])
-                        break;
-                    l--;
-                    r++;
-                }
-                int len = r - l - 1;
+                int len = q - p - 1;
                 if (len > result.Length)
+                    result = s.Substring(p + 1, len);
+            }
+            return result;
+        }
+        #endregion
+        #region 最长公共前缀
+        public static string LongestCommonPrefix(string[] strs)
+        {
+            string result = "";
+            int len = 0;
+            for (int i = 0; i < strs.Length; i++)
+            {
+                if (strs[i].Length == 0)
                 {
-                    result = s.Substring(l + 1, len);
-                    Console.WriteLine(result);
+                    len = 0;
+                    break;
+                }
+                if (len > strs[i].Length || len == 0)
+                    len = strs[i].Length;
+            }
+            for (int i = 0; i < len; i++)
+            {
+                char v = strs[0][i];
+                bool isEqual = true;
+                foreach (string item in strs)
+                {
+                    if (item[i] != v)
+                    {
+                        isEqual = false;
+                        break;
+                    }
+                }
+                if (isEqual)
+                {
+                    result += v;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return result;
+        }
+        #endregion
+        #region 三数之和
+        public static IList<IList<int>> ThreeSum(int[] nums)
+        {
+            IList<IList<int>> result = new List<IList<int>>();
+            if (nums.Length == 3 && nums[0] == 0 && nums[1] == 0 && nums[2] == 0)
+            {
+                result.Add(new int[] { 0, 0, 0 });
+                return result;
+            }
+
+            Array.Sort(nums);
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int v = 0 - nums[i];
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    int i2 = Array.IndexOf(nums, (v - nums[j]));
+                    if (i2 != -1 && i2 > j && i2 != i && j != i)
+                    {
+                        var r = new List<int>() { nums[i], nums[j], nums[i2] };
+                        result.Add(r);
+                    }
+                }
+            }
+            return result;
+        }
+
+        public static IList<IList<int>> ThreeSum2(int[] nums)
+        {
+            IList<IList<int>> result = new List<IList<int>>();
+            int len = nums.Length;
+            if (len < 3) return result;
+            Array.Sort(nums);
+            for (int i = 0; i < len - 2; i++)
+            {
+                if (nums[i] > 0) break;
+                if (i > 0 && nums[i] == nums[i - 1]) continue; // 去重
+                int left = i + 1;
+                int right = len - 1;
+                while (left < right)
+                {
+                    int sum = nums[i] + nums[left] + nums[right];
+                    if (sum == 0)
+                    {
+                        result.Add(new List<int>() { nums[i], nums[left], nums[right] });
+                        while (left < right && nums[left] == nums[left + 1]) left++; // 去重
+                        while (left < right && nums[right] == nums[right - 1]) right--; // 去重
+                        left++;
+                        right--;
+                    }
+                    else if (sum < 0) left++;
+                    else if (sum > 0) right--;
                 }
             }
             return result;
