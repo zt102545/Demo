@@ -1,0 +1,23 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/{url}", //服务地址
+      "DownstreamPathTemplate": "/{url}", //网关地址
+      "DownstreamScheme": "http", //请求协议
+      "UpstreamHttpMethod": [ "Get", "Post" ], //请求方式
+      "UseServiceDiscovery": true, //是否使用服务发现
+      "ServiceName": "ZztService", //Consul服务名称
+      "LoadBalancerOptions": { //负载均衡策略方式
+        "Type": "RoundRobin" //轮询
+      }
+    }
+  ],
+  "GlobalConfiguration": { //服务发现的全局配置
+    //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
+    "ServiceDiscoveryProvider": {
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，etcd等服务发现
+    }
+  }
+}

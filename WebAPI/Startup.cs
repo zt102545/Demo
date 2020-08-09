@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Common.WebSocket.Extension;
 using WebAPI.Common;
+using WebAPI.Common.Consul;
 
 namespace WebAPI
 {
@@ -80,6 +81,10 @@ namespace WebAPI
             app.AddWebSocketMap();
             #endregion
 
+            #region Consul注册 
+            //站点启动完成--执行且只执行一次
+            this.Configuration.ConsulRegist();
+            #endregion
         }
     }
 }
