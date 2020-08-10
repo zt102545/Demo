@@ -17,7 +17,7 @@ namespace WebAPI.Common.Consul
         {
             ConsulClient client = new ConsulClient(c =>
             {
-                c.Address = new Uri("http://localhost:8500/");
+                c.Address = new Uri("http://120.79.246.191:8500/");
                 c.Datacenter = "dc1";
             });
 

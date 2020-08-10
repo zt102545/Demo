@@ -16,6 +16,7 @@ namespace WebAPI.Controllers
         public string Get()
         {
             //dotnet WebAPI.dll --urls="http://*:5005" --ip="127.0.0.1" --port=5005
+            Console.WriteLine(Request.Host.Value);
             return Request.Host.Value;
         }
     }

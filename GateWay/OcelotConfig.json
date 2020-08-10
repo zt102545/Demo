@@ -15,7 +15,7 @@
   "GlobalConfiguration": { //服务发现的全局配置
     //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
     "ServiceDiscoveryProvider": {
-      "Host": "localhost",
+      "Host": "120.79.246.191",
       "Port": 8500,
       "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，etcd等服务发现
     }
