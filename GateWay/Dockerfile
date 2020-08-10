@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["GateWay/GateWay.csproj", "GateWay/"]
+COPY ["GateWay.csproj", "GateWay/"]
 RUN dotnet restore "GateWay/GateWay.csproj"
 COPY . .
 WORKDIR "/src/GateWay"

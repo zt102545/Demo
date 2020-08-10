@@ -8,10 +8,25 @@ using Microsoft.Extensions.Configuration;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class MicroservicesController : ControllerBase
     {
+        private IConfiguration _iConfiguration;
+
+        public MicroservicesController(IConfiguration configuration)
+        {
+            this._iConfiguration = configuration;
+        }
+
+        [HttpGet]
+        public IActionResult Index()
+        {
+            Console.WriteLine($"This is HealthController  {this._iConfiguration["port"]} Invoke");
+
+            return Ok();//只是个200 
+        }
+
         [HttpGet]
         public string Get()
         {

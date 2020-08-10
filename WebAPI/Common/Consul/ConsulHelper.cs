@@ -31,14 +31,14 @@ namespace WebAPI.Common.Consul
                 Name = "ZztService",//注册名称
                 Address = ip,
                 Port = port,
-                Tags = new string[] { weight.ToString() }//传入参数
-                //Check = new AgentServiceCheck()//心跳检测
-                //{
-                //    Interval = TimeSpan.FromSeconds(12),
-                //    HTTP = $"http://{ip}:{port}/Api/Health/Index",
-                //    Timeout = TimeSpan.FromSeconds(5),
-                //    DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(20)
-                //}
+                Tags = new string[] { weight.ToString() },//传入参数
+                Check = new AgentServiceCheck()//心跳检测
+                {
+                    Interval = TimeSpan.FromSeconds(12),
+                    HTTP = $"http://{ip}:{port}/api/Microservices/Index",
+                    Timeout = TimeSpan.FromSeconds(5),
+                    DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(20)
+                }
             });
             //命令行参数获取
             Console.WriteLine($"{ip}:{port}--weight:{weight}");
