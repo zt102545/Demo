@@ -13,7 +13,7 @@ COPY ["GateWay.csproj", "GateWay/"]
 RUN echo $PWD
 RUN echo `ls`
 RUN dotnet restore "GateWay/GateWay.csproj"
-COPY . .
+COPY .. .
 WORKDIR "/src/GateWay"
 RUN dotnet build "GateWay.csproj" -c Release -o /app/build
 
