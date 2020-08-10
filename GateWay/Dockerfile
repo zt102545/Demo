@@ -6,7 +6,7 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
-WORKDIR ..
+WORKDIR /src
 RUN echo $PWD
 RUN echo `ls`
 COPY ["GateWay/GateWay.csproj", "GateWay/"]
