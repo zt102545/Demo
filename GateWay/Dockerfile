@@ -9,7 +9,9 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 RUN echo $PWD
 RUN echo `ls`
-COPY ["GateWay/GateWay.csproj", "GateWay/"]
+COPY ["GateWay.csproj", "GateWay/"]
+RUN echo $PWD
+RUN echo `ls`
 RUN dotnet restore "GateWay/GateWay.csproj"
 COPY . .
 WORKDIR "/src/GateWay"
