@@ -12,25 +12,23 @@ namespace WebAPI.Controllers
     [ApiController]
     public class MicroservicesController : ControllerBase
     {
-        private IConfiguration _iConfiguration;
-
-        public MicroservicesController(IConfiguration configuration)
-        {
-            this._iConfiguration = configuration;
-        }
-
+        /// <summary>
+        /// 心跳检查
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Index()
         {
-            Console.WriteLine($"This is HealthController  {this._iConfiguration["port"]} Invoke");
-
-            return Ok();//只是个200 
+            return Ok();//只是个200状态码
         }
 
+        /// <summary>
+        /// 测试接口
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public string Get()
         {
-            //dotnet WebAPI.dll --urls="http://*:5005" --ip="127.0.0.1" --port=5005
             Console.WriteLine(Request.Host.Value);
             return Request.Host.Value;
         }
