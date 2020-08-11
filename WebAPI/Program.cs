@@ -18,13 +18,6 @@ namespace WebAPI
     {
         public static void Main(string[] args)
         {
-            //new ConfigurationBuilder()
-            //      .SetBasePath(Directory.GetCurrentDirectory())
-            //      .AddCommandLine(args)//支持命令行参数
-            //      .Build();
-            var bindingConfig = new ConfigurationBuilder()
-               .AddCommandLine(args)
-               .Build();
             CreateHostBuilder(args).Build().Run();
         }
 
