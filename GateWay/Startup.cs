@@ -2,14 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GateWay.OcelotExtend;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Ocelot.Cache;
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Consul;
+using Ocelot.Provider.Polly;
 
 namespace GateWay
 {
@@ -21,7 +25,11 @@ namespace GateWay
         {
             services
                 .AddOcelot()//使用Ocelot
-                .AddConsul();//使用Consul
+                .AddConsul()//使用Consul
+                .AddCacheManager(o => o.WithDictionaryHandle())//使用Cache,默认字典存储
+                .AddPolly();//使用Polly
+            //这里的IOcelotCache<CachedResponse>是默认的缓存的约束，替换成自定义的OcelotCache
+            services.AddSingleton<IOcelotCache<CachedResponse>, OcelotCache>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

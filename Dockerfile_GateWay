@@ -10,6 +10,7 @@ WORKDIR /src
 RUN echo $PWD
 RUN echo `ls`
 COPY ["GateWay/GateWay.csproj", "GateWay/"]
+COPY ["Common/Common.csproj", "Common/"]
 RUN dotnet restore "GateWay/GateWay.csproj"
 COPY . .
 WORKDIR "/src/GateWay"

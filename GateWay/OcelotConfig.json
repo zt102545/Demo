@@ -8,16 +8,39 @@
       "UseServiceDiscovery": true, //是否使用服务发现
       "ServiceName": "ZztService", //Consul服务名称
       "LoadBalancerOptions": { //负载均衡策略方式
-        "Type": "RoundRobin" //轮询
+        //RoundRobin-轮询；
+        //LeastConnection–将请求最空闲的服务器(最少连接的服务器)；
+        //NoLoadBalance–不使用负载均衡，直接访问config配置或者服务发现的第一个可用服务
+        "Type": "RoundRobin"
+      },
+      "FileCacheOptions": { //缓存配置
+        "TtlSeconds": 15, //缓存时间
+        "Region": "UserCache" //可以调用Api清理
+      },
+      "QoSOptions": { //熔断的配置
+        "ExceptionsAllowedBeforeBreaking": 3, //允许多少个异常请求
+        "DurationOfBreak": 10000, // 熔断的时间，单位为ms,10S后尝试再次请求
+        "TimeoutValue": 10000 //下游处理时间超过10s则视为超时, 默认90秒
+      },
+      "RateLimitOptions": { //限流的配置
+        "ClientWhitelist": [ "zzt", "zzt2" ], //白名单，请求头的添加参数ClientId来识别白名单
+        "EnableRateLimiting": true, //启动限流
+        "Period": "10s", //1s, 5m, 1h, 1d，这里表示10秒为单位统计请求次数。10秒内能请求多少次
+        "PeriodTimespan": 5, //多少秒之后客户端可以重试，单位秒
+        "Limit": 5 //统计时间段内允许的最大请求数量
       }
     }
   ],
-  "GlobalConfiguration": { //服务发现的全局配置
+  "GlobalConfiguration": { //网关全局配置
     //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
-    "ServiceDiscoveryProvider": {
+    "ServiceDiscoveryProvider": { //服务发现的全局配置
       "Host": "120.79.246.191", //Consul服务端地址
       "Port": 8500, //Consul服务端端口号
       "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，etcd等组件
+    },
+    "RateLimitOptions": {//限流的全局配置
+      "QuotaExceededMessage": "Too many requests", // 当请求过载被截断时返回的消息
+      "HttpStatusCode": 666 // 当请求过载被截断时返回的http status
     }
   }
 }
