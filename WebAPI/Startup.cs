@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Common.WebSocket.Extension;
 using WebAPI.Common;
 using WebAPI.Common.Consul;
+using SkyApm.Utilities.DependencyInjection;
 
 namespace WebAPI
 {
@@ -43,6 +44,9 @@ namespace WebAPI
                 //c.IncludeXmlComments(xmlModelPath, true);
             });
             #endregion
+
+            //Skywalking
+            services.AddSkyApmExtensions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

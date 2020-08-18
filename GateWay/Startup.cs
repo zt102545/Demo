@@ -14,6 +14,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Consul;
 using Ocelot.Provider.Polly;
+using SkyApm.Utilities.DependencyInjection;
 
 namespace GateWay
 {
@@ -30,6 +31,8 @@ namespace GateWay
                 .AddPolly();//使用Polly
             //这里的IOcelotCache<CachedResponse>是默认的缓存的约束，替换成自定义的OcelotCache
             services.AddSingleton<IOcelotCache<CachedResponse>, OcelotCache>();
+            //Skywalking
+            services.AddSkyApmExtensions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
