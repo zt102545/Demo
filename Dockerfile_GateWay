@@ -22,4 +22,6 @@ RUN dotnet publish "GateWay.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+ENV ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=SkyAPM.Agent.AspNetCore
+ENV SKYWALKING__SERVICENAME=GateWay
 ENTRYPOINT ["dotnet", "GateWay.dll"]
