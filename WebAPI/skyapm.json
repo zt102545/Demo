@@ -19,7 +19,7 @@
       "QueueSize": 30000,
       "BatchSize": 3000,
       "gRPC": {
-        "Servers": "127.0.0.1:11800", //Skywalking服务地址，生产环境替需替换成生产skyapm发布后的地址
+        "Servers": "120.79.246.191:11800", //Skywalking服务地址，生产环境替需替换成生产skyapm发布后的地址
         "Timeout": 10000,
         "ConnectTimeout": 10000,
         "ReportTimeout": 600000
