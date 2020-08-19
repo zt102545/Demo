@@ -1,0 +1,184 @@
+2020-08-18 18:31:54.466 +08:00 [GateWay] [Information] SkyApm.InstrumentStartup : Initializing ...
+2020-08-18 18:31:54.512 +08:00 [GateWay] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Service.ServiceDiscoveryV5Service : Loaded instrument service [SkyApm.Service.ServiceDiscoveryV5Service].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2020-08-18 18:31:54.513 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.V6.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.V6.ConnectService].
+2020-08-18 18:31:54.598 +08:00 [GateWay] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2020-08-18 18:31:54.598 +08:00 [GateWay] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2020-08-18 18:31:55.069 +08:00 [GateWay] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2020-08-18 18:32:04.779 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:32:09.542 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:32:19.575 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:32:24.564 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:32:34.580 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:32:39.542 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:32:49.565 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:32:54.560 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:33:04.575 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:33:09.534 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:33:19.543 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:33:24.543 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:33:34.560 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:33:39.548 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:33:49.564 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:33:54.537 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:34:04.560 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:34:09.557 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:34:19.578 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:34:24.542 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:34:34.561 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:34:39.526 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:34:49.538 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.ConnectionManager : Connect server timeout.
+System.Threading.Tasks.TaskCanceledException: Reached deadline.
+   at Grpc.Core.Channel.WaitForStateChangedAsync(ChannelState lastObservedState, Nullable`1 deadline)
+   at Grpc.Core.Channel.ConnectAsync(Nullable`1 deadline)
+   at SkyApm.Transport.Grpc.ConnectionManager.ConnectAsync()
+2020-08-18 18:34:54.561 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:35:01.582 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:35:37.647 +08:00 [GateWay] [Information] SkyApm.InstrumentStartup : Initializing ...
+2020-08-18 18:35:37.711 +08:00 [GateWay] [Information] SkyApm.Service.RegisterService : Loaded instrument service [SkyApm.Service.RegisterService].
+2020-08-18 18:35:37.711 +08:00 [GateWay] [Information] SkyApm.Service.PingService : Loaded instrument service [SkyApm.Service.PingService].
+2020-08-18 18:35:37.711 +08:00 [GateWay] [Information] SkyApm.Service.ServiceDiscoveryV5Service : Loaded instrument service [SkyApm.Service.ServiceDiscoveryV5Service].
+2020-08-18 18:35:37.711 +08:00 [GateWay] [Information] SkyApm.Service.SegmentReportService : Loaded instrument service [SkyApm.Service.SegmentReportService].
+2020-08-18 18:35:37.712 +08:00 [GateWay] [Information] SkyApm.Service.CLRStatsService : Loaded instrument service [SkyApm.Service.CLRStatsService].
+2020-08-18 18:35:37.712 +08:00 [GateWay] [Information] SkyApm.Sampling.SimpleCountSamplingInterceptor : Loaded instrument service [SkyApm.Sampling.SimpleCountSamplingInterceptor].
+2020-08-18 18:35:37.712 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.V6.ConnectService : Loaded instrument service [SkyApm.Transport.Grpc.V6.ConnectService].
+2020-08-18 18:35:37.780 +08:00 [GateWay] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [Microsoft.AspNetCore].
+2020-08-18 18:35:37.781 +08:00 [GateWay] [Information] SkyApm.InstrumentStartup : Started SkyAPM .NET Core Agent.
+2020-08-18 18:35:37.852 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:35:38.454 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:35:38.455 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:35:38.665 +08:00 [GateWay] [Information] SkyApm.Diagnostics.TracingDiagnosticProcessorObserver : Loaded diagnostic listener [HttpHandlerDiagnosticListener].
+2020-08-18 18:35:52.741 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:35:52.762 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:36:07.726 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:36:07.727 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:36:22.725 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:36:22.740 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:36:37.748 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:36:37.749 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:36:52.726 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:36:52.743 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:37:07.728 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:37:07.729 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:37:22.731 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:37:22.750 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:37:37.843 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:37:37.844 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:37:52.727 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:37:53.127 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:38:07.732 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:38:07.732 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:38:22.727 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:38:22.744 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:38:37.786 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:38:37.787 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:38:52.718 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:38:52.737 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:39:07.956 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:39:07.956 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:39:22.739 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:39:22.922 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:39:37.743 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:39:37.744 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:39:52.735 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:39:52.773 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:40:07.741 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:40:07.741 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:40:22.737 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:40:22.779 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
+2020-08-18 18:40:37.730 +08:00 [GateWay] [Error] SkyApm.Transport.Grpc.V6.ServiceRegister : Register service fail.
+Grpc.Core.RpcException: Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+   at SkyApm.Transport.Grpc.V6.ServiceRegister.<>c__DisplayClass9_0.<<RegisterServiceAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at SkyApm.Transport.Grpc.Common.Call.Execute[T](Func`1 task, Func`1 errCallback, Func`1 errMessage)
+2020-08-18 18:40:37.730 +08:00 [GateWay] [Warning] SkyApm.Transport.Grpc.ConnectionManager : Connection state changed. Connected -> Ready . Status(StatusCode=Unimplemented, Detail="Method not found: Register/doServiceRegister")
+2020-08-18 18:40:52.745 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Shutdown connection[120.79.246.191:11800].
+2020-08-18 18:40:52.779 +08:00 [GateWay] [Information] SkyApm.Transport.Grpc.ConnectionManager : Connected server[120.79.246.191:11800].
