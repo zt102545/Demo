@@ -218,5 +218,20 @@ namespace LeetCode
             return result;
         }
         #endregion
+        #region 合并两个有序数组
+        public static void Merge(int[] nums1, int m, int[] nums2, int n)
+        {
+            int[] num = new int[m + n];
+            foreach (int item in nums1)
+            {
+                for (int i = 0; i < num.Length; i++)
+                { 
+                    
+                }
+            }    
+        }
+        #endregion
+
     }
+
 }
