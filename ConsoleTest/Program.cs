@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -25,31 +26,31 @@ namespace ConsoleTest
             #endregion
 
             #region try catch测试
-            //Console.Out.WriteLine("1");
+            //Console.WriteLine("1");
             //try
             //{
-            //    Console.Out.WriteLine("2");
+            //    Console.WriteLine("2");
             //    throw new ArgumentException();
             //}
             //catch (NotImplementedException)
             //{
-            //    Console.Out.WriteLine("3");
+            //    Console.WriteLine("3");
             //}
             //catch (ArgumentException)
             //{
-            //    Console.Out.WriteLine("4");
+            //    Console.WriteLine("4");
             //}
             //catch (Exception)
             //{
-            //    Console.Out.WriteLine("5");
+            //    Console.WriteLine("5");
             //    throw new NotImplementedException();
             //}
             //finally
             //{
-            //    Console.Out.WriteLine("6");
+            //    Console.WriteLine("6");
             //    throw new Exception();
             //}
-            //Console.Out.WriteLine("7");
+            //Console.WriteLine("7");
             //Console.Read();
             #endregion
 
@@ -93,9 +94,9 @@ namespace ConsoleTest
             #endregion
 
             #region ReferenceEquals测试
-            //int i = 5;
+            //object i = 5;
             //int j = 5;
-            //if (object.ReferenceEquals(i, j))
+            //if (object.Equals(i, j))
             //    Console.WriteLine("Equal");
             //else
             //    Console.WriteLine("Not Euqal");
@@ -110,7 +111,7 @@ namespace ConsoleTest
 
             ////总结：
             ////1."=="：值类型时比较值是否相等，引用类型时比较两对象的引用是否相等。（string就重载==，使其比较的不是两个字符串的引用，而是比较的两个字符串字面量是否相等）。
-            ////2.Equals：值类型时类型相同（不会进行类型自动转换），并且数值相同(对于struct的每个成员都必须相同)。引用类型时比较两个对象的引用是否相等。
+            ////2.Equals：值类型时类型相同（不会进行类型自动转换），并且数值相同(对于struct的每个成员都必须相同)。引用类型时比较两个对象的引用是否相等。(string同上)
             ////3.ReferenceEquals：无论值类型还是引用类型都比较两对象的引用是否相等。
             #endregion
 
@@ -145,6 +146,8 @@ namespace ConsoleTest
             //string c = "bao";
             //Console.WriteLine(mes == a);
             //Console.WriteLine((b + c) == mes);
+            //Console.WriteLine(ReferenceEquals(mes, a));
+            //Console.WriteLine(ReferenceEquals((b + c), mes));
             #endregion
 
             #region ParameterizedThreadStart
@@ -188,7 +191,7 @@ namespace ConsoleTest
 
             #region Encoding.Default.GetBytes("")
             //string stringstrTmp = "abcdefg某某某";
-            ////Encoding.Default.GetBytes(stringstrTmp)将字符串转为字节数组，中文字符占两个字节，GetBytes是将字符串的每个字符转成ascii码后返回byte数组
+            ////Encoding.Default.GetBytes(stringstrTmp)将字符串转为字节数组，UTF-8编码的中文字符占三个字节，GetBytes是将字符串的每个字符转成ascii码后返回byte数组
             //int i = Encoding.Default.GetBytes(stringstrTmp).Length;
             //Console.WriteLine(i);
             #endregion
@@ -244,6 +247,7 @@ namespace ConsoleTest
             #endregion
 
             #region Convert.ToInt32
+            //对于x.5这种数，使用Convert.ToInt32转换时，返回的是其两个边界整数中为偶数的那个
             //double a = 19.5;
             //double b = 20.5;
             //while (true)
@@ -420,17 +424,13 @@ namespace ConsoleTest
         #region 1、1、2、3、5、8、13、21、34...... 求第30位数是多少，用递归算法实现
         public static int GetNum(int i)
         {
-            if (i > 1)
-            {
-                return GetNum(i - 1) + GetNum(i - 2);
-            }
-            else if (i == 1)
+            if (i == 1 || i == 2)
             {
                 return 1;
             }
             else
             {
-                return 0;
+                return GetNum(i - 1) + GetNum(i - 2);
             }
         }
         #endregion
@@ -717,6 +717,9 @@ namespace ConsoleTest
 
     public class JCB : JCA
     {
+        /// <summary>
+        /// 重载A的方法，这样C调用的时候只能调到B的重载方法
+        /// </summary>
         public override void test()
         {
             Console.WriteLine("BBBB");
