@@ -11,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Select(14);
+            Select(15);
             Console.ReadKey();
         }
 
@@ -103,7 +103,6 @@ namespace LeetCode
                     //给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
                     //如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
                     //您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
-
                     ListNode l14_1 = new ListNode(9);
 
                     int[] num14_2 = { 1, 9, 9, 9, 9, 9, 9, 9, 9, 9 };
@@ -114,7 +113,25 @@ namespace LeetCode
                         current.next = new ListNode(i14);
                         current = current.next;
                     }
-                    var Node = AddTwoNumbers(l14_1, l14_2.next);
+                    var Node14 = AddTwoNumbers(l14_1, l14_2.next);
+                    break;
+                case 15://合并两个有序链表
+                    ListNode l15_1 = new ListNode(-9);
+                    l15_1.next = new ListNode(3);
+
+                    ListNode l15_2 = new ListNode(5);
+                    l15_2.next = new ListNode(7);
+
+                    var Node15 = MergeTwoLists(l15_1, l15_2);
+                    break;
+                case 16://旋转链表
+                    //给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。
+                    //输入: 1->2->3->4->5->NULL, k = 2
+                    //输出: 4->5->1->2->3->NULL
+                    ListNode l16_1 = new ListNode(9);
+                    l16_1.next = new ListNode(3);
+
+                    var Node16 = RotateRight(l16_1, 4);
                     break;
             }
             Console.WriteLine(result);
@@ -702,9 +719,73 @@ namespace LeetCode
         }
         #endregion
         #region 合并两个有序链表
-        public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+        /// <summary>
+        /// 思路：遍历两个链表的每个元素拿出来比较，小的先插入到新链表里，小的链表下移。另一种思路：递归
+        /// </summary>
+        /// <param name="l1"></param>
+        /// <param name="l2"></param>
+        /// <returns></returns>
+        public static ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
-            return null;
+            ListNode result = new ListNode(0);
+            ListNode current = result;
+            while (l1 != null && l2 != null)
+            {
+                if (l1.val < l2.val)
+                {
+                    current.next = l1;
+                    l1 = l1.next;
+                }
+                else
+                {
+                    current.next = l2;
+                    l2 = l2.next;
+                }
+                current = current.next;
+            }
+            current.next = l1 == null ? l2 : l1;
+            return result.next;
+        }
+        #endregion
+        #region 旋转链表
+        /// <summary>
+        /// 思路：快慢指针，先取余k步，快指针先走k步，然后遍历到最后，最后快指针的对象链上初始对象，慢指针的对象断开下一个对象。
+        /// </summary>
+        /// <param name="head"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        public static ListNode RotateRight(ListNode head, int k)
+        {
+            var fast = head;
+            var slow = head;
+            int count = 0;
+            while (fast != null)
+            {
+                fast = fast.next;
+                count++;
+            }
+            if (count == 0) return head;
+            k = k % count;
+            fast = head;
+            // fast 先走k步
+            while (k-- > 0)
+            {
+                if (fast != null && fast.next != null) fast = fast.next;
+                else fast = head;
+            }
+            // slow == fast说明k会被链表长度整除，故无需操作head直接返回即可
+            if (slow == fast) return head;
+            // 快慢指针start
+            while (fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next;
+            }
+            // 对慢指针位置进行打断
+            fast.next = head;
+            head = slow.next;
+            slow.next = null;
+            return head;
         }
         #endregion
         #endregion
