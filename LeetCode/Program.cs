@@ -133,6 +133,17 @@ namespace LeetCode
 
                     var Node16 = RotateRight(l16_1, 4);
                     break;
+                case 17://环形链表
+                    HasCycle(null);
+                    break;
+                case 18://相交链表
+                    //编写一个程序，找到两个单链表相交的起始节点。
+                    GetIntersectionNode(null, null);
+                    break;
+                case 19://删除链表中的节点
+                    //请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。注意：传入函数的唯一参数为 要被删除的节点 。
+                    DeleteNode(null);
+                    break;
             }
             Console.WriteLine(result);
         }
@@ -786,6 +797,82 @@ namespace LeetCode
             head = slow.next;
             slow.next = null;
             return head;
+        }
+        #endregion
+        #region 环形链表
+        /// <summary>
+        /// 思路：遍历，然后List存储每个节点，判断List是否存在该节点，存在则是环形链表。
+        /// 另一种思路：快慢指针，同时起步，快指针总会跑过慢指针，快指针等于慢指针时就是环形链表，若快指针跑完了就不是
+        /// </summary>
+        /// <param name="head"></param>
+        /// <returns></returns>
+        public static bool HasCycle(ListNode head)
+        {
+            bool isCycle = false;
+            List<int> keyList = new List<int>();
+            ListNode current = head;
+            while (current != null)
+            {
+                if (keyList.Contains(current.GetHashCode()))
+                {
+                    isCycle = true;
+                    break;
+                }
+                else
+                {
+                    keyList.Add(current.GetHashCode());
+                    current = current.next;
+                }
+            }
+            return isCycle;
+        }
+        #endregion
+        #region 相交链表
+        /// <summary>
+        /// 思路：分别遍历nodeA和nodeB，如果nodeA遍历完以后指向headB，同理nodeB遍历完后指向headA。所以nodeA和nodeB迟早会遇到。
+        /// </summary>
+        /// <param name="headA"></param>
+        /// <param name="headB"></param>
+        /// <returns></returns>
+        public static ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+        {
+            if (headA == null || headB == null) return null;
+            ListNode nodeA = headA;
+            ListNode nodeB = headB;
+            //如果两个链表都不相交也不会死循环，最后两个链表都指向nodeA=nodeB=null
+            //如果是相交前节点长度相同时，则两个链表从开始每次都移一个节点，相交的节点就跳出循环了。
+            while (nodeA != nodeB)
+            {
+                if (nodeA == null)
+                    nodeA = headB;
+                else
+                    nodeA = nodeA.next;
+                if (nodeB == null)
+                    nodeB = headA;
+                else
+                    nodeB = nodeB.next;
+            }
+            return nodeA;
+        }
+        #endregion
+        #region 删除链表中的节点
+        /// <summary>
+        /// 跳过该节点，指向下一个节点
+        /// </summary>
+        /// <param name="node">该节点就是要被删除的节点</param>
+        public static void DeleteNode(ListNode node)
+        {
+            node.val = node.next.val;
+            node.next = node.next.next;
+        }
+        #endregion
+        #endregion
+
+        #region 数学与数字
+        #region 整数反转
+        public int Reverse(int x)
+        {
+            return 0;
         }
         #endregion
         #endregion
