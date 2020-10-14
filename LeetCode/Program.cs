@@ -130,10 +130,8 @@ namespace LeetCode
                     //输出: 4->5->1->2->3->NULL
                     ListNode l16_1 = new ListNode(9);
                     l16_1.next = new ListNode(3);
-
                     var Node16 = RotateRight(l16_1, 4);
                     break;
-<<<<<<< Updated upstream
                 case 17://环形链表
                     HasCycle(null);
                     break;
@@ -144,50 +142,7 @@ namespace LeetCode
                 case 19://删除链表中的节点
                     //请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。注意：传入函数的唯一参数为 要被删除的节点 。
                     DeleteNode(null);
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    break;
                 case 20://整数反转
                     //给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
                     Reverse(-123);
@@ -201,11 +156,11 @@ namespace LeetCode
                     //给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
                     //你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
                     SingleNumber(new int[] { 5, 1, 4, 4, 1 });
->>>>>>> Stashed changes
                     break;
             }
             Console.WriteLine(result);
         }
+
         #region 数组与字符串
         #region 两数之和
         public static int[] TwoSum(int[] nums, int target)
@@ -926,143 +881,6 @@ namespace LeetCode
         }
         #endregion
         #endregion
-
-        #region 数学与数字
-        #region 整数反转
-        public int Reverse(int x)
-        {
-            return 0;
-        }
-        #endregion
-        #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         #region 数学与数字
         #region 整数反转
