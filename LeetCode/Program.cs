@@ -11,7 +11,7 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            Select(15);
+            Select(22);
             Console.ReadKey();
         }
 
@@ -133,6 +133,7 @@ namespace LeetCode
 
                     var Node16 = RotateRight(l16_1, 4);
                     break;
+<<<<<<< Updated upstream
                 case 17://环形链表
                     HasCycle(null);
                     break;
@@ -143,6 +144,64 @@ namespace LeetCode
                 case 19://删除链表中的节点
                     //请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点。注意：传入函数的唯一参数为 要被删除的节点 。
                     DeleteNode(null);
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                case 20://整数反转
+                    //给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+                    Reverse(-123);
+                    break;
+                case 21://回文数
+                    //判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+                    //你能不将整数转为字符串来解决这个问题吗？
+                    IsPalindrome(1073773701);
+                    break;
+                case 22://只出现一次的数字
+                    //给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+                    //你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+                    SingleNumber(new int[] { 5, 1, 4, 4, 1 });
+>>>>>>> Stashed changes
                     break;
             }
             Console.WriteLine(result);
@@ -875,6 +934,206 @@ namespace LeetCode
             return 0;
         }
         #endregion
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #region 数学与数字
+        #region 整数反转
+        /// <summary>
+        /// 思路：取余，与上一次取余*10相加，注意整数溢出的问题。
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
+        public static int Reverse(int x)
+        {
+            long result = 0;
+
+            while (x != 0)
+            {
+                int temp = x % 10;
+                result = result * 10 + temp;
+                x = x / 10;
+            }
+            //判断是否存在溢出，极易忽略这点
+            if (result > int.MaxValue || result < int.MinValue)
+            {
+                result = 0;
+            }
+
+            return (int)result;
+      }
+        #endregion
+
+        #region 回文数
+        /// <summary>
+        /// 思路：整数反转后加上原来数字，如果等于原来数字*2,则为回文数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
+        public static bool IsPalindrome(int x)
+        {
+            if (x < 0) return false;
+            bool result = false;
+            long r = 0;
+            long s = x;
+            while (x != 0)
+            {
+                int temp = x % 10;
+                r = r * 10 + temp;
+                x = x / 10;
+            }
+            if (s * 2 == s + r)
+            {
+                result = true;
+            }
+            return result;
+        }
+        #endregion
+
+        #region 只出现一次的数字
+        /// <summary>
+        /// 思路1：嵌套两次遍历
+        /// 思路2：两次遍历，第一次用字典key记录每个值，value为出现次数，第二遍遍历字典，次数为1的则为答案。
+        /// 前两种思路没法达到题目线性时间复杂度和常数空间复杂度的要求，注意题目说的元素只会出现1次或2次，所以可以用异或运算来解决
+        /// 思路3：异或运算，是二进制上的运算，数字转为二进制并比较每位数，两数相等则返回0，不等则为1，最后答案的二进制再转为常数就是异或运算的结果。
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public static int SingleNumber(int[] nums)
+        {
+            int ret = 0;
+            foreach (int e in nums) ret ^= e;
+            return ret;
+        }
+        #endregion
+
         #endregion
     }
 
