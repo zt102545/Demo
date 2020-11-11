@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+  namespace: gateway
+  labels:
+    name: api-gateway
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: api-gateway
+  template:
+    metadata:
+      labels:
+        name: api-gateway
+    spec:
+      containers:
+      - name: api-gateway
+        image: gateway:latest
+        ports:
+        - containerPort: 80
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: api-gateway-svc
+  namespace: xdp-poc
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30080
+  selector:
+    name: api-gateway-demo

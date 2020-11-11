@@ -33,12 +33,13 @@
   ],
   "GlobalConfiguration": { //网关全局配置
     //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
+    "ServiceNamespace": "kube-system",//k8s命名空间
     "ServiceDiscoveryProvider": { //服务发现的全局配置
       "Host": "120.79.246.191", //Consul服务端地址
       "Port": 8500, //Consul服务端端口号
       "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，etcd等组件
     },
-    "RateLimitOptions": {//限流的全局配置
+    "RateLimitOptions": { //限流的全局配置
       "QuotaExceededMessage": "Too many requests", // 当请求过载被截断时返回的消息
       "HttpStatusCode": 666 // 当请求过载被截断时返回的http status
     }
