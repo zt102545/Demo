@@ -29,8 +29,8 @@ namespace GateWay
                 .AddOcelot()//使用Ocelot
                 .AddConsul()//使用Consul
                 .AddCacheManager(o => o.WithDictionaryHandle())//使用Cache,默认字典存储
-                .AddPolly()//使用Polly
-                .AddKubernetes();//使用K8s
+                .AddPolly();//使用Polly
+                //.AddKubernetes();//使用K8s
             //这里的IOcelotCache<CachedResponse>是默认的缓存的约束，替换成自定义的OcelotCache
             services.AddSingleton<IOcelotCache<CachedResponse>, OcelotCache>();
             //Skywalking
