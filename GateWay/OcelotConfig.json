@@ -33,7 +33,7 @@
   ],
   "GlobalConfiguration": { //网关全局配置
     //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
-    "ServiceNamespace": "kube-system",//k8s命名空间
+    "ServiceNamespace": "default", //k8s命名空间
     "ServiceDiscoveryProvider": { //服务发现的全局配置
       "Host": "120.79.246.191", //Consul服务端地址
       "Port": 8500, //Consul服务端端口号
