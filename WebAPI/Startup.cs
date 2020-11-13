@@ -87,7 +87,7 @@ namespace WebAPI
 
             #region Consul注册 
             //站点启动完成--执行且只执行一次
-            this.Configuration.ConsulRegist();
+            //this.Configuration.ConsulRegist();
             #endregion
         }
     }

@@ -34,10 +34,14 @@
   "GlobalConfiguration": { //网关全局配置
     //"BaseUrl": "http://127.0.0.1:6299", //网关对外地址
     "ServiceNamespace": "default", //k8s命名空间
+    //"ServiceDiscoveryProvider": { //服务发现的全局配置
+    //  "Host": "120.79.246.191", //Consul服务端地址
+    //  "Port": 8500, //Consul服务端端口号
+    //  "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，kube，etcd等组件
+    //},
     "ServiceDiscoveryProvider": { //服务发现的全局配置
-      "Host": "120.79.246.191", //Consul服务端地址
-      "Port": 8500, //Consul服务端端口号
-      "Type": "Consul" //指明由Consul提供的服务发现，也可以换zookeeper，etcd等组件
+      "Namespace": "api-gateway-svc", //service的命名空间
+      "Type": "kube" //指明由K8s的service提供的服务发现
     },
     "RateLimitOptions": { //限流的全局配置
       "QuotaExceededMessage": "Too many requests", // 当请求过载被截断时返回的消息
