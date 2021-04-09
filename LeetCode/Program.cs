@@ -623,7 +623,7 @@ namespace LeetCode
         #region 链表突击
         #region 反转链表
         /// <summary>
-        /// 思路：循环遍历
+        /// 思路：循环遍历,每次取出第一个链表指向上一次取出来的第一个链表，取出第一个链表后，剩余的链表做下次循环，第一次指向为null
         /// </summary>
         /// <param name="head"></param>
         /// <returns></returns>
@@ -653,7 +653,7 @@ namespace LeetCode
                 return head;
             }
             //递归
-            ListNode newHead = ReverseList(head.next);
+            ListNode newHead = ReverseList2(head.next);
             //回溯
             head.next.next = head;
             head.next = null;
