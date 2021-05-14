@@ -372,6 +372,14 @@ namespace ConsoleTest
             //c.test();
             #endregion
 
+            #region float double decimal的区别
+            //float:单精度，32位，4字节的浮点数，有效位数7位
+            //double:双精度，64位，8字节的浮点数，有效位数16位
+            //decimal:高精度，128位，16字节的浮点数，有效数字28位
+            double s = 12345.123456789012345678901234567890123;
+            s = s + 1;
+            Console.WriteLine(s);
+            #endregion
 
             Console.Read();
         }
